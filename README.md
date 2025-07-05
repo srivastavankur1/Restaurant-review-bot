@@ -26,10 +26,14 @@ Built using FastAPI, LangChain, Hugging Face LLMs, and a lightweight HTML/CSS fr
      - A thank-you email for positive feedback.
      - An apology email + escalation to admin for negative reviews.
 
-## Please ADD .env file ->
-HUGGINGFACEHUB_API_TOKEN = Hugging face api token 
-EMAIL_HOST= smtp.gmail.com
-EMAIL_PORT= 587
-EMAIL_ADDRESS= sender's email
-EMAIL_PASSWORD= app password
-ADMIN_EMAIL= admin's email
+## ⚙️ Configuration (.env)
+
+Create a .env file in the backend/ directory and add the following keys:
+
+```env
+HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_token
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_ADDRESS=your_sender_email@example.com
+EMAIL_PASSWORD=your_email_app_password
+ADMIN_EMAIL=admin@example.com
